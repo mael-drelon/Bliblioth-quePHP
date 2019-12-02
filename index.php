@@ -74,11 +74,15 @@
         <br>
         EXO 2
         <br>
+
+        <br>
+        EXO 3
+        <br>
         <?php
         try 
         { 
             $DB = new PDO('mysql:host=192.168.65.192;dbname=BaseTD2Exo2', 'Mimos', 'D12622', $pdo_options); 
-            $req = $DB->exec("INSERT INTO table(Nom, Prenom) VALUES ($Nom, $Prenom)");
+            $req = $DB->exec("INSERT INTO Mytable (Nom, Prenom) VALUES ($attribut1, $attribut2)");
         } 
         catch(Exception $e) 
         { 
